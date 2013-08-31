@@ -8,7 +8,7 @@
 #ifndef BRIDGE_EVENT_H_
 #define BRIDGE_EVENT_H_
 
-#include "bridge_types.h"
+#include "bridge_Types.h"
 
 namespace bridge
 {

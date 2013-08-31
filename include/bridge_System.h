@@ -24,15 +24,15 @@ protected:
 	~System();
 	static System* m_instance;
 
-	void setUp() = 0;
-	void tearDown() = 0;
+	virtual void setUp() = 0;
+	virtual void tearDown() = 0;
 public:
 
 	//Things to include
 	//  clipboard
 
-	std::string getClipboard() = 0;
-	void setClipboard(std::string str) = 0;
+	virtual std::string getClipboard() = 0;
+	virtual void setClipboard(std::string str) = 0;
 };
 }
 
