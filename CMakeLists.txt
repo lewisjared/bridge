@@ -24,6 +24,14 @@ elseif (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	)
 endif ()
 
+# Ensure that eclipse can parse GCCs output
+IF(CMAKE_COMPILER_IS_GNUCC)
+    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fmessage-length=0")
+ENDIF(CMAKE_COMPILER_IS_GNUCC)
+IF(CMAKE_COMPILER_IS_GNUCXX)
+    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fmessage-length=0")
+ENDIF(CMAKE_COMPILER_IS_GNUCXX)
+
 
 #build the library
 include_directories( ./include )
