@@ -7,7 +7,26 @@
 
 #include "bridge_SystemX11.h"
 
+#include <stddef.h>
+#include <iostream>
+
 using namespace bridge;
+
+SystemX11::SystemX11()
+	:System()
+{
+	m_display = XOpenDisplay(0);
+
+	if (m_display)
+	{
+		std::cout << "Could not open display" << std::endl;
+	}
+}
+
+SystemX11::~SystemX11()
+{
+	XCloseDisplay(m_display);
+}
 
 void SystemX11::setUp()
 {
@@ -25,6 +44,33 @@ std::string SystemX11::getClipboard()
 }
 
 void SystemX11::setClipboard(std::string str)
+{
+
+}
+
+bool SystemX11::processEvents()
+{
+	bool anyEvents = false;
+
+	//This function clears the event queue
+	while(XPending(m_display))
+	{
+		//Extract the event
+		XEvent event;
+		XNextEvent(m_display, &event);
+
+		//Interpret event
+		interpretEvent(&event);
+		anyEvents = true;
+	}
+
+	return anyEvents;
+}
+
+/*
+ * Interprets an XEvent and converts it into a bridge event
+ */
+void SystemX11::interpretEvent(XEvent* event)
 {
 
 }

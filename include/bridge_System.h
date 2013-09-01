@@ -33,6 +33,8 @@ public:
 
 	virtual std::string getClipboard() = 0;
 	virtual void setClipboard(std::string str) = 0;
+
+	virtual bool processEvents() = 0;
 };
 }
 
