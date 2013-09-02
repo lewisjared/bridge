@@ -13,17 +13,17 @@
 namespace bridge
 {
 
-class SystemWin32 : public System{
-protected:
-	SystemWin32();
-	~SystemWin32();
+	class SystemWin32 : public System{
+	protected:
+		SystemWin32();
+		~SystemWin32();
 
-	void setUp();
-	void tearDown();
-public:
-	std::string getClipboard();
-	void setClipboard(std::string str);
-};
+		void setUp();
+		void tearDown();
+	public:
+		std::string getClipboard();
+		void setClipboard(std::string str);
+	};
 
 }
 

@@ -15,31 +15,31 @@
 namespace bridge
 {
 
-class EventManager;
+	class EventManager;
 
-class System {
-public:
-	static void initialise();
-	static void destroy();
-	System* getInstance();
+	class System {
+	public:
+		static void initialise();
+		static void destroy();
+		System* getInstance();
 
-	//Things to include
-	//  clipboard
+		//Things to include
+		//  clipboard
 
-	virtual std::string getClipboard() = 0;
-	virtual void setClipboard(std::string str) = 0;
+		virtual std::string getClipboard() = 0;
+		virtual void setClipboard(std::string str) = 0;
 
-	virtual bool processEvents() = 0;
-	virtual void handleEvents() = 0;
-protected:
-	System();
-	~System();
-	static System* m_instance;
+		virtual bool processEvents() = 0;
+		virtual void handleEvents() = 0;
+	protected:
+		System();
+		~System();
+		static System* m_instance;
 
-	virtual void setUp() = 0;
-	virtual void tearDown() = 0;
-	EventManager* m_eventManager;
-};
+		virtual void setUp() = 0;
+		virtual void tearDown() = 0;
+		EventManager* m_eventManager;
+	};
 
 }
 

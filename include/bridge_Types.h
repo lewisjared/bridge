@@ -10,12 +10,12 @@
 
 namespace bridge {
 
-typedef enum {
-	EVT_MouseButton,
-	EVT_KeyPress
-} TEventType;
+	typedef enum {
+		EVT_MouseButton,
+		EVT_KeyPress
+	} TEventType;
 
-typedef void* TEventData;
+	typedef void* TEventData;
 
 }
 
