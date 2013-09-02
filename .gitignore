@@ -12,8 +12,14 @@
 *.la
 *.a
 
-# build directory
-/build/
-
 # Autosave files
 *~
+
+# CMake Generated files
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+.project
+.cproject
