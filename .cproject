@@ -34,6 +34,21 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="0.1009415346.1515337844" name="bridge_SystemX11.cpp" rcbsApplicability="disable" resourcePath="src/bridge_SystemX11.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.1899975261.42731603">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.1899975261.42731603" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.1556004330">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1074662922" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.1009415346.1449714734" name="bridge_Event.cpp" rcbsApplicability="disable" resourcePath="src/bridge_Event.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.1899975261.657283016">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.1899975261.657283016" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.1556004330">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.841377486" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.1009415346.1831958536" name="bridge_System.cpp" rcbsApplicability="disable" resourcePath="src/bridge_System.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.1899975261.1807526277">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.1899975261.1807526277" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.1556004330">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.495586292" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
@@ -63,5 +78,9 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings">
+		<doc-comment-owner id="org.eclipse.cdt.ui.doxygen">
+			<path value=""/>
+		</doc-comment-owner>
+	</storageModule>
 </cproject>

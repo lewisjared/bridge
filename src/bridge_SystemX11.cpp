@@ -6,6 +6,7 @@
  */
 
 #include "bridge_SystemX11.h"
+#include "bridge_Event.h"
 
 #include <stddef.h>
 #include <iostream>
@@ -72,5 +73,23 @@ bool SystemX11::processEvents()
  */
 void SystemX11::interpretEvent(XEvent* event)
 {
+	Event* brgEvent = NULL;
+	switch(event->type)
+	{
+	case KeyPress:
+	case KeyRelease:
+		//Create a Button Event and push
 
+		break;
+
+	case ButtonPress:
+	case ButtonRelease:
+		break;
+	default:
+		std::cout << "Event not handled: " << event->type << std::endl;
+		break;
+	}
+
+	//if (brgEvent)
+		//m_eventManager->pushEvent(brgEvent);
 }
