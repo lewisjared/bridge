@@ -8,6 +8,7 @@
 #ifndef BRIDGE_TYPES_H_
 #define BRIDGE_TYPES_H_
 
+namespace bridge {
 
 typedef enum {
 	EVT_MouseButton,
@@ -16,7 +17,7 @@ typedef enum {
 
 typedef void* TEventData;
 
-
+}
 
 
 #endif /* BRIDGE_TYPES_H_ */
