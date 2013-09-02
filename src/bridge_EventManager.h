@@ -10,6 +10,7 @@
 
 #include "bridge_Event.h"
 
+#include <cstring>
 #include <deque>
 
 namespace bridge {

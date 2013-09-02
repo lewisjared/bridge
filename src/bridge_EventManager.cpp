@@ -43,7 +43,10 @@ void EventManager::pushEvent(Event* event)
 
 Event* EventManager::popEvent()
 {
-	return m_eventStack.pop_front();
+	Event* event = m_eventStack.front();
+	m_eventStack.pop_front();
+
+	return event;
 }
 
 size_t EventManager::getNumEvents()
