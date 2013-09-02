@@ -15,6 +15,9 @@ namespace bridge
 
 class SystemWin32 : public System{
 protected:
+	SystemWin32();
+	~SystemWin32();
+
 	void setUp();
 	void tearDown();
 public:

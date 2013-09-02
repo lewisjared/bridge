@@ -11,11 +11,11 @@
 using namespace bridge;
 
 System::System() {
-	//Do nothing
+	m_eventManager = new EventManager;
 }
 
 System::~System() {
-	//Do nothing
+	delete m_eventManager;
 }
 
 System* System::getInstance()
@@ -46,5 +46,10 @@ void System::destroy()
 
 		delete m_instance;
 	}
+}
+
+void System::handleEvents()
+{
+	m_eventManager->handleEvents();
 }
 

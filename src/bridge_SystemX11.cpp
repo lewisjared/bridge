@@ -90,6 +90,6 @@ void SystemX11::interpretEvent(XEvent* event)
 		break;
 	}
 
-	//if (brgEvent)
-		//m_eventManager->pushEvent(brgEvent);
+	if (brgEvent)
+		m_eventManager->pushEvent(brgEvent);
 }
